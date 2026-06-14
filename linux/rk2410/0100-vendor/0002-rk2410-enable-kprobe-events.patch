@@ -1,0 +1,13 @@
+diff --git a/linux/rk2410/kconfig.conf b/linux/rk2410/kconfig.conf
+index 05cf012..4837465 100644
+--- a/linux/rk2410/kconfig.conf
++++ b/linux/rk2410/kconfig.conf
+@@ -23,3 +23,8 @@ CONFIG_SND_SOC_ROCKCHIP_I2S_TDM=y
+ ## Rockchip no longer supports CAN on RK3588 & Linux 6.1 SDK
+ # CONFIG_CANFD_ROCKCHIP is not set
+ # CONFIG_CAN_ROCKCHIP is not set
++
++# Enable kprobe events for bpftrace-based kernel diagnostics.
++CONFIG_KPROBES=y
++CONFIG_KRETPROBES=y
++CONFIG_KPROBE_EVENTS=y
